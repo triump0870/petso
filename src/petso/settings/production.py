@@ -4,8 +4,8 @@ from .base import *  # NOQA
 import logging.config
 
 # For security and performance reasons, DEBUG is turned off
-DEBUG = False
-TEMPLATE_DEBUG = False
+DEBUG = True
+TEMPLATE_DEBUG = True
 
 # Must mention ALLOWED_HOSTS in production!
 # ALLOWED_HOSTS = ["petso.com"]
