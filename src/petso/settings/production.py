@@ -1,6 +1,6 @@
 # In production set the environment variable like this:
 #    DJANGO_SETTINGS_MODULE=petso.settings.production
-from .base import *             # NOQA
+from .base import *  # NOQA
 import logging.config
 
 # For security and performance reasons, DEBUG is turned off
@@ -22,7 +22,7 @@ TEMPLATES[0]['OPTIONS'].update({"loaders": loaders})
 TEMPLATES[0].update({"APP_DIRS": False})
 
 # Define STATIC_ROOT for the collectstatic command
-STATIC_ROOT = join(BASE_DIR, '..', 'site', 'static')
+STATIC_ROOT = join(BASE_DIR, 'static')
 
 # Log everything to the logs directory at the top
 LOGFILE_ROOT = join(dirname(BASE_DIR), 'logs')
