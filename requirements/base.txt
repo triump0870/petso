@@ -12,3 +12,6 @@ arrow
 twilio
 dj-static
 raven
+psycopg2
+gunicorn
+dj-database-url
